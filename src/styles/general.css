@@ -1,0 +1,159 @@
+/* 
+   FONDO Y WRAPPER GENERAL
+ */
+.fondo {
+    background-color: #241f19;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flow-root;
+}
+
+.general-wrapper {
+    width: min(1100px, 92%);
+    margin: 5rem auto 0 auto;
+    min-height: 70vh;
+    background: #1a1818;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 24px 24px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .18);
+    perspective: 900px;
+    transform-style: preserve-3d;
+    overflow: visible;
+}
+
+/*
+   GATO (animación de salto)
+*/
+.custom-card {
+    padding-inline: 0;
+    padding-top: 0;
+    overflow: hidden;
+}
+
+.cat-img {
+    max-height: 300px;
+    margin: 0 auto;
+    object-fit: cover;
+    filter: drop-shadow(0 3px 8px rgba(0, 0, 0, .55));
+    animation: cat-jump 4s ease-in-out infinite;
+}
+
+
+@keyframes cat-jump {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-40px) scale(1.05);
+    }
+
+
+    100% {
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+/*
+   TARJETA DE PERFIL
+*/
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 16px;
+    background: #242222;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .25);
+    width: fit-content;
+}
+
+.profile-img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-name {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.profile-role {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+#fondoCard {
+    background-color: #1a1818;
+}
+
+@media (min-width: 768px) {
+    .ms-md-auto {
+        max-width: 220px;
+    }
+}
+
+
+.icon-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #1a1818;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.icon-circle img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+
+.icon-small {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+
+
+.icon-circle,
+.custom-btn,
+.info>div,
+.texto {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.icon-circle:hover,
+.custom-btn:hover,
+.info>div:hover,
+.texto:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
+}
+
+.text-descripcion{
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    color: #fff;
+}

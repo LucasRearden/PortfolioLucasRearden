@@ -1,0 +1,27 @@
+{
+    "navbar": {
+      "general": "General",
+      "about": "Sobre mí",
+      "contact": "Contacto"
+    },
+    "general": {
+      "title": "Desarrollador Full Stack",
+      "location": "📍 Montevideo, Uruguay",
+      "bio": "Soy un joven proactivo, con gran capacidad de aprendizaje, adaptación y buen desempeño en trabajo en equipo. Destaco por mi disciplina, responsabilidad y compromiso. Estoy dispuesto a aprender nuevas habilidades y mejorar continuamente, enfocado en desarrollar soluciones eficientes. ¡Si quieres trabajar juntos no dudes en contactarme!"
+    },
+    "cv": {
+      "label": "CV",
+      "es": "📄 Español",
+      "en": "📄 Inglés"
+    },
+    "about": {
+      "title": "Sobre mí",
+      "p1": "Me apasiona construir productos útiles...",
+      "p2": "Disfruto trabajar con React, Node y bases de datos."
+    },
+    "contact": {
+      "title": "Contacto",
+      "subtitle": "Hablemos sobre tu proyecto"
+    }
+  }
+  

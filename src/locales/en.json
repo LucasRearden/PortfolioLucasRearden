@@ -1,0 +1,26 @@
+{
+    "navbar": {
+        "general": "General",
+        "about": "About me",
+        "contact": "Contact"
+    },
+    "general": {
+        "title": "Full-Stack Developer",
+        "location": "📍 Montevideo, Uruguay",
+        "bio": "I am a proactive young developer with strong learning capacity, adaptability, and good performance in teamwork. I stand out for my discipline, responsibility, and commitment. I am willing to learn new skills and improve continuously, focused on developing efficient solutions. If you want to work together, do not hesitate to contact me!"
+    },
+    "cv": {
+        "label": "CV",
+        "es": "📄 Spanish",
+        "en": "📄 English"
+    },
+    "about": {
+        "title": "About me",
+        "p1": "I am passionate about building useful products...",
+        "p2": "I enjoy working with React, Node, and databases."
+    },
+    "contact": {
+        "title": "Contact",
+        "subtitle": "Lets talk about your project"
+    }
+}

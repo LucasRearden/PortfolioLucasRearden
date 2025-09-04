@@ -1,0 +1,44 @@
+.tecnologias {
+    background-color: #121212;
+    padding: 3rem;  /* menos padding arriba */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+}
+
+/* Contenedor scrolleable */
+.scroll-container {
+    overflow-x: hidden; /* oculto scroll manual */
+    width: 100%;
+}
+
+/* Pista de cards */
+.track {
+    display: flex;
+    gap: 2rem;
+    animation: scroll 25s linear infinite; /* autoplay */
+}
+
+/* Cards */
+.card-item {
+    min-width: 200px;
+    background: #1e1e1e;
+    border: 1px solid #325e8a;
+    border-radius: 10px;
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
+    flex-shrink: 0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    border-color: #4da3ff;
+}
+
+/* Animación de scroll */
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); } 
+}
