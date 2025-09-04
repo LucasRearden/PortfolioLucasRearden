@@ -1,0 +1,249 @@
+/* ===== Título grande (h2 principal en escala de grises) ===== */
+h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin: 25px 0 35px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: relative;
+
+  /* Degradado blanco → gris → negro */
+  background: linear-gradient(90deg, #ffffff, #bbbbbb, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Resplandor grisáceo */
+  text-shadow: 0 0 12px rgba(200, 200, 200, 0.4);
+}
+
+/* Línea decorativa debajo del h2 (desactivada) */
+h2::after {
+  content: "";
+  display: none;
+}
+
+/* Animación del degradado gris */
+@keyframes shineGray {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+/* ===== Animación títulos (h2 y h3) ===== */
+.fade-title {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+
+.fade-title.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Section cards ===== */
+.section-card {
+  background: #121212;
+  border: 1px solid #2d2d2d;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 25px auto;
+  max-width: 900px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+  color: #eaeaea;
+}
+
+/* ===== Subtítulos de sección (h3) ===== */
+.section-card h3 {
+  text-align: center;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  padding: .45rem 1.1rem;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #161616, #0f0f0f);
+  border: 1px solid #2a2a2a;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .45), inset 0 0 10px rgba(255, 255, 255, .03);
+
+  /* Degradado de texto igual al h2 */
+  background: linear-gradient(90deg, #ffffff, #bfbfbf, #3a3a3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Quitar las líneas viejas */
+.section-card h3::before,
+.section-card h3::after {
+  display: none;
+}
+
+/* Halo sutil debajo */
+.section-card h3::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -8px;
+  width: 80%;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ffffff30, #bfbfbf40, #3a3a3a30);
+  filter: blur(1px);
+  animation: shineGray 3s linear infinite;
+}
+
+/* ===== Barra de idiomas ===== */
+.progress-lng {
+  width: 100%;
+  height: 10px;
+  background: #1c1c1c;
+  border: 1px solid #2a2a2a;
+  border-radius: 999px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .5);
+}
+
+.progress-lng__bar {
+  height: 100%;
+  width: 0;
+  /* seteado inline */
+  background: linear-gradient(90deg, #ffffff, #bdbdbd, #3a3a3a);
+  border-radius: 999px;
+  transition: width .8s ease;
+}
+
+/* ===== Figura (foto + caption + link) ===== */
+.media-figure {
+  background: #0e0e0e;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 12px;
+  margin: 0;
+}
+
+/* Imagen */
+.media-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.media-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
+}
+
+/* Caption debajo de la foto */
+.media-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #cfcfcf;
+}
+
+/* Descripción grande a la derecha */
+.media-desc {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: #eaeaea;
+}
+
+/* Ajuste responsive */
+@media (max-width: 768px) {
+  .media-row {
+    row-gap: 8px;
+  }
+
+  .media-desc {
+    margin-top: 4px;
+  }
+}
+
+/* Centrar subtítulos (IDIOMAS, UTU, ORT) */
+.section-card {
+  text-align: center;
+}
+
+.section-card .section-subtitle {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Tarjeta de descripción a la derecha: más linda y legible */
+.media-desc-card {
+  text-align: left;
+  /* no hereda el center del contenedor */
+  background: linear-gradient(180deg, #121212, #0e0e0e);
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 16px 18px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, .35), inset 0 0 10px rgba(255, 255, 255, .02);
+  position: relative;
+}
+
+/* Acento sutil en el borde izquierdo */
+.media-desc-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10%;
+  bottom: 10%;
+  width: 4px;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #ffffff30, #bfbfbf3d, #3a3a3a30);
+}
+
+/* Tipografía de la descripción */
+.media-desc {
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: #eaeaea;
+}
+
+
+.media-caption .btn,
+.media-desc-card .btn {
+  border: 1px solid #2a2a2a !important;
+  background: rgba(255, 255, 255, 0.03) !important;
+  color: #eaeaea !important;
+  border-radius: 999px !important;
+  padding: .45rem .9rem !important;
+  font-weight: 600 !important;
+  letter-spacing: .5px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, .35), inset 0 0 10px rgba(255, 255, 255, .02);
+  transition: transform .2s ease, box-shadow .3s ease, background .3s ease;
+}
+
+.media-caption .btn:hover,
+.media-desc-card .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, .5), 0 0 18px rgba(255, 255, 255, .08) inset;
+  background: rgba(255, 255, 255, 0.06) !important;
+}
+
+.media-caption .btn:active,
+.media-desc-card .btn:active {
+  transform: translateY(0);
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .media-desc-card {
+    margin-top: 6px;
+  }
+}
