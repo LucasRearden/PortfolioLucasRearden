@@ -22,5 +22,213 @@
     "contact": {
         "title": "Contact",
         "subtitle": "Lets talk about your project"
+    },
+    "skills": [
+        {
+            "nombre": "JavaScript",
+            "rating": 4.5
+        },
+        {
+            "nombre": "React.js",
+            "rating": 4.0
+        },
+        {
+            "nombre": "Node.js",
+            "rating": 4.0
+        },
+        {
+            "nombre": "Express.js",
+            "rating": 3
+        },
+        {
+            "nombre": "MongoDB",
+            "rating": 4
+        },
+        {
+            "nombre": "Mongoose",
+            "rating": 3.5
+        },
+        {
+            "nombre": "HTML5",
+            "rating": 4.5
+        },
+        {
+            "nombre": "Cascading Style Sheets (CSS)",
+            "rating": 4
+        },
+        {
+            "nombre": "Git",
+            "rating": 4
+        },
+        {
+            "nombre": "Postman API",
+            "rating": 4
+        },
+        {
+            "nombre": "Scrum",
+            "rating": 4
+        },
+        {
+            "nombre": "Agile Methodologies",
+            "rating": 4
+        },
+        {
+            "nombre": "C#",
+            "rating": 4
+        },
+        {
+            "nombre": ".NET Framework",
+            "rating": 3.5
+        },
+        {
+            "nombre": "SQL",
+            "rating": 4.5
+        },
+        {
+            "nombre": "MySQL",
+            "rating": 4.5
+        },
+        {
+            "nombre": "Database Design",
+            "rating": 4.0
+        },
+        {
+            "nombre": "Relational Database",
+            "rating": 4.0
+        },
+        {
+            "nombre": "Database Development",
+            "rating": 4.0
+        },
+        {
+            "nombre": "Docker",
+            "rating": 3
+        },
+        {
+            "nombre": "Agile Application Development",
+            "rating": 4.0
+        },
+        {
+            "nombre": "Object-Oriented Programming (OOP)",
+            "rating": 4.5
+        },
+        {
+            "nombre": "Programming",
+            "rating": 5
+        },
+        {
+            "nombre": "Software Development",
+            "rating": 4
+        },
+        {
+            "nombre": "Web Development",
+            "rating": 4.5
+        },
+        {
+            "nombre": "JIRA",
+            "rating": 3
+        },
+        {
+            "nombre": "HTML",
+            "rating": 5
+        },
+        {
+            "nombre": "CentOS",
+            "rating": 3
+        },
+        {
+            "nombre": "Ansible",
+            "rating": 2
+        },
+        {
+            "nombre": "Zabbix",
+            "rating": 2
+        },
+        {
+            "nombre": "Red Hat Linux",
+            "rating": 3
+        },
+        {
+            "nombre": "Quality Assurance",
+            "rating": 4
+        },
+        {
+            "nombre": "Cyber Network Fundamentals",
+            "rating": 2
+        },
+        {
+            "nombre": "LAN-WAN",
+            "rating": 4
+        },
+        {
+            "nombre": "Operating Systems",
+            "rating": 3.5
+        },
+        {
+            "nombre": "Structured Cabling",
+            "rating": 4
+        },
+        {
+            "nombre": "Computer Repair",
+            "rating": 3
+        },
+        {
+            "nombre": "Teamwork",
+            "rating": 5
+        },
+        {
+            "nombre": "Java",
+            "rating": 3.5
+        },
+        {
+            "nombre": "Java SE",
+            "rating": 3
+        },
+        {
+            "nombre": "Databases",
+            "rating": 4.5
+        }
+    ],
+    "education": {
+        "heading": "Education",
+        "languagesHeading": "Languages",
+        "languages": [
+            {
+                "name": "Spanish",
+                "level": "Native",
+                "value": 100
+            },
+            {
+                "name": "English",
+                "level": "B2 Advanced",
+                "value": 80
+            }
+        ],
+        "items": [
+            {
+                "title": "UTU – Directorate of Technical–Professional Education",
+                "caption": "Technological Baccalaureate in IT",
+                "hrefText": "View certificate",
+                "description": "Technical institute in Montevideo offering practical, job-oriented training in programming, networks, web design, and IT support."
+            },
+            {
+                "title": "Universidad ORT Uruguay",
+                "caption": "IT Analyst",
+                "hrefText": "Open certificate",
+                "description": "Tertiary career focused on designing, developing, implementing, and maintaining software systems. Blends theory and practice in programming, databases, networks, and project management for tech roles in organizations."
+            }
+        ]
+    },
+    "projects": {
+        "heading": "Projects",
+        "buttons": {
+            "github": "GitHub",
+            "online": "Live"
+        },
+        "items": [
+            {
+                "title": "React Weather App"
+            }
+        ]
     }
 }

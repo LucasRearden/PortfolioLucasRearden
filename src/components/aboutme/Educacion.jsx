@@ -1,52 +1,46 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useMemo } from "react";
+import { useTranslation } from "react-i18next";
 import "../../styles/educacion.css";
 
 import cursoImg from "../../assets/utu.png";
 import proyectoImg from "../../assets/ORT.jpg";
 import escolaridad from "../../assets/escolaridadLucasRearden.pdf";
 
-const items = [
-  {
-    title: "UTU - Dirección General de Educación Técnico - Profesional",
-    img: cursoImg,
-    imgAlt: "UTU ESI",
-    caption: "Bachillerato Tecnológico en Informática",
-    href: escolaridad,
-    hrefText: "Ver certificado",
-    imgHref: "https://esi.edu.uy/",
-    description:
-      "Instituto de formación en informática y tecnología ubicado en Montevideo. Ofrece cursos y carreras técnicas en programación, redes, diseño web y soporte, con un enfoque práctico y orientado al mercado laboral."
-  },
-  {
-    title: "Universidad ORT Uruguay",
-    img: proyectoImg,
-    imgAlt: "OrtPagina",
-    caption: "Analista TI",
-    href: escolaridad,
-    hrefText: "Abrir certificado",
-    imgHref: "https://fi.ort.edu.uy/analista-en-tecnologias-de-la-informacion",
-    description:
-      "Carrera terciaria orientada a formar profesionales capaces de diseñar, programar, implementar y mantener sistemas de software. Combina teoría y práctica en programación, bases de datos, redes y gestión de proyectos, preparando para roles de desarrollo y soporte tecnológico en empresas."
-  },
-];
-
-const idiomas = [
-  { nombre: "Español", nivelTexto: "Nativo", valor: 100 },
-  { nombre: "Inglés", nivelTexto: "B2 Avanzado", valor: 80 },
-];
-
 export const Educacion = () => {
-  useEffect(() => {
-    // animación de las barras
-    const fills = document.querySelectorAll(".lang-fill");
-    fills.forEach((bar) => {
-      const finalWidth = bar.getAttribute("data-width");
-      bar.style.width = "0%";
-      setTimeout(() => {
-        bar.style.width = finalWidth;
-      }, 300);
-    });
+  const { t } = useTranslation();
 
+  // Textos traducidos
+  const heading = t("education.heading");
+  const languagesHeading = t("education.languagesHeading");
+  const idiomas = t("education.languages", { returnObjects: true }) || [];
+  const itemsText = t("education.items", { returnObjects: true }) || [];
+
+  // Metadatos NO traducibles (imágenes, hrefs)
+  const itemsMeta = useMemo(
+    () => [
+      {
+        img: cursoImg,
+        imgAlt: "UTU ESI",
+        imgHref: "https://esi.edu.uy/",
+        href: escolaridad
+      },
+      {
+        img: proyectoImg,
+        imgAlt: "OrtPagina",
+        imgHref: "https://fi.ort.edu.uy/analista-en-tecnologias-de-la-informacion",
+        href: escolaridad
+      }
+    ],
+    []
+  );
+
+  // Mezclamos textos traducidos con los metadatos
+  const items = itemsText.map((txt, idx) => ({
+    ...txt,
+    ...(itemsMeta[idx] || {})
+  }));
+
+  useEffect(() => {
     // animación títulos
     const titles = document.querySelectorAll(".fade-title");
     titles.forEach((t, i) => {
@@ -56,38 +50,33 @@ export const Educacion = () => {
 
   return (
     <div className="about-wrapper container-fluid">
-      <h2 className="fade-title">Educación</h2>
+      <h2 className="fade-title">{heading}</h2>
 
       {/* ===== Sección Idiomas ===== */}
       <section className="section-card">
-        <h3 className="fade-title section-subtitle">Idiomas</h3>
+        <h3 className="fade-title section-subtitle">{languagesHeading}</h3>
 
         <div className="container backk p-3 rounded-3">
           {idiomas.map((i) => (
-            <div className="row align-items-center py-2" key={i.nombre}>
-              {/* Nombre */}
-              <div className="col-3 text-start fw-semibold">{i.nombre}</div>
+            <div className="row align-items-center py-2" key={i.name}>
+              <div className="col-3 text-start fw-semibold">{i.name}</div>
 
-              {/* Barra */}
               <div className="col-7">
                 <div className="progress-lng">
                   <div
                     className="progress-lng__bar"
-                    style={{ width: `${i.valor}%` }}
-                  ></div>
+                    style={{ width: `${i.value}%` }}
+                  />
                 </div>
               </div>
 
-              {/* Nivel + % */}
-              <div className="col-2 text-end small">
-                {i.nivelTexto}
-              </div>
+              <div className="col-2 text-end small">{i.level}</div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* === Render de las 3 secciones con layout foto + texto === */}
+      {/* === Render de cada institución === */}
       {items.map((it) => (
         <section className="section-card" key={it.title}>
           <h3 className="fade-title section-subtitle">{it.title}</h3>
@@ -122,11 +111,9 @@ export const Educacion = () => {
                 <p className="lead mb-0 media-desc">{it.description}</p>
               </div>
             </div>
-
           </div>
         </section>
       ))}
-
     </div>
   );
 };

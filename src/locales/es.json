@@ -1,27 +1,234 @@
 {
-    "navbar": {
-      "general": "General",
-      "about": "Sobre mí",
-      "contact": "Contacto"
+  "navbar": {
+    "general": "General",
+    "about": "Sobre mí",
+    "contact": "Contacto"
+  },
+  "general": {
+    "title": "Desarrollador Full Stack",
+    "location": "📍 Montevideo, Uruguay",
+    "bio": "Soy un joven proactivo, con gran capacidad de aprendizaje, adaptación y buen desempeño en trabajo en equipo. Destaco por mi disciplina, responsabilidad y compromiso. Estoy dispuesto a aprender nuevas habilidades y mejorar continuamente, enfocado en desarrollar soluciones eficientes. ¡Si quieres trabajar juntos no dudes en contactarme!"
+  },
+  "cv": {
+    "label": "CV",
+    "es": "📄 Español",
+    "en": "📄 Inglés"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "p1": "Me apasiona construir productos útiles...",
+    "p2": "Disfruto trabajar con React, Node y bases de datos."
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Hablemos sobre tu proyecto"
+  },
+  "skills": [
+    {
+      "nombre": "JavaScript",
+      "rating": 4.5
     },
-    "general": {
-      "title": "Desarrollador Full Stack",
-      "location": "📍 Montevideo, Uruguay",
-      "bio": "Soy un joven proactivo, con gran capacidad de aprendizaje, adaptación y buen desempeño en trabajo en equipo. Destaco por mi disciplina, responsabilidad y compromiso. Estoy dispuesto a aprender nuevas habilidades y mejorar continuamente, enfocado en desarrollar soluciones eficientes. ¡Si quieres trabajar juntos no dudes en contactarme!"
+    {
+      "nombre": "React.js",
+      "rating": 4.0
     },
-    "cv": {
-      "label": "CV",
-      "es": "📄 Español",
-      "en": "📄 Inglés"
+    {
+      "nombre": "Node.js",
+      "rating": 4.0
     },
-    "about": {
-      "title": "Sobre mí",
-      "p1": "Me apasiona construir productos útiles...",
-      "p2": "Disfruto trabajar con React, Node y bases de datos."
+    {
+      "nombre": "Express.js",
+      "rating": 3
     },
-    "contact": {
-      "title": "Contacto",
-      "subtitle": "Hablemos sobre tu proyecto"
+    {
+      "nombre": "MongoDB",
+      "rating": 4
+    },
+    {
+      "nombre": "Mongoose",
+      "rating": 3.5
+    },
+    {
+      "nombre": "HTML5",
+      "rating": 4.5
+    },
+    {
+      "nombre": "Hojas de estilos en cascada (CSS)",
+      "rating": 4
+    },
+    {
+      "nombre": "Git",
+      "rating": 4
+    },
+    {
+      "nombre": "API de Postman",
+      "rating": 4
+    },
+    {
+      "nombre": "Scrum",
+      "rating": 4
+    },
+    {
+      "nombre": "Metodologías ágiles",
+      "rating": 4
+    },
+    {
+      "nombre": "C#",
+      "rating": 4
+    },
+    {
+      "nombre": ".NET Framework",
+      "rating": 3.5
+    },
+    {
+      "nombre": "SQL",
+      "rating": 4.5
+    },
+    {
+      "nombre": "MySQL",
+      "rating": 4.5
+    },
+    {
+      "nombre": "Diseño de bases de datos",
+      "rating": 4.0
+    },
+    {
+      "nombre": "Base de datos relacional",
+      "rating": 4.0
+    },
+    {
+      "nombre": "Desarrollo de base de datos",
+      "rating": 4.0
+    },
+    {
+      "nombre": "Docker",
+      "rating": 3
+    },
+    {
+      "nombre": "Desarrollo ágil de aplicaciones",
+      "rating": 4.0
+    },
+    {
+      "nombre": "Programación orientada a objetos (POO)",
+      "rating": 4.5
+    },
+    {
+      "nombre": "Programación",
+      "rating": 5
+    },
+    {
+      "nombre": "Desarrollo de software",
+      "rating": 4
+    },
+    {
+      "nombre": "Desarrollo web",
+      "rating": 4.5
+    },
+    {
+      "nombre": "JIRA",
+      "rating": 3
+    },
+    {
+      "nombre": "HTML",
+      "rating": 5
+    },
+    {
+      "nombre": "CentOS",
+      "rating": 3
+    },
+    {
+      "nombre": "Ansible",
+      "rating": 2
+    },
+    {
+      "nombre": "Zabbix",
+      "rating": 2
+    },
+    {
+      "nombre": "Red Hat Linux",
+      "rating": 3
+    },
+    {
+      "nombre": "Aseguramiento de la calidad",
+      "rating": 4
+    },
+    {
+      "nombre": "Fundamentos Cyber de Redes",
+      "rating": 2
+    },
+    {
+      "nombre": "LAN-WAN",
+      "rating": 4
+    },
+    {
+      "nombre": "Sistemas operativos",
+      "rating": 3.5
+    },
+    {
+      "nombre": "Cableado estructurado",
+      "rating": 4
+    },
+    {
+      "nombre": "Reparación de equipos informáticos",
+      "rating": 3
+    },
+    {
+      "nombre": "Trabajo en equipo",
+      "rating": 5
+    },
+    {
+      "nombre": "Java",
+      "rating": 3.5
+    },
+    {
+      "nombre": "Java SE",
+      "rating": 3
+    },
+    {
+      "nombre": "Bases de datos",
+      "rating": 4.5
     }
+  ],
+  "education": {
+    "heading": "Educación",
+    "languagesHeading": "Idiomas",
+    "languages": [
+      {
+        "name": "Español",
+        "level": "Nativo",
+        "value": 100
+      },
+      {
+        "name": "Inglés",
+        "level": "B2 Avanzado",
+        "value": 80
+      }
+    ],
+    "items": [
+      {
+        "title": "UTU - Dirección General de Educación Técnico - Profesional",
+        "caption": "Bachillerato Tecnológico en Informática",
+        "hrefText": "Ver certificado",
+        "description": "Instituto de formación en informática y tecnología ubicado en Montevideo. Ofrece cursos y carreras técnicas en programación, redes, diseño web y soporte, con un enfoque práctico y orientado al mercado laboral."
+      },
+      {
+        "title": "Universidad ORT Uruguay",
+        "caption": "Analista TI",
+        "hrefText": "Abrir certificado",
+        "description": "Carrera terciaria orientada a formar profesionales capaces de diseñar, programar, implementar y mantener sistemas de software. Combina teoría y práctica en programación, bases de datos, redes y gestión de proyectos, preparando para roles de desarrollo y soporte tecnológico en empresas."
+      }
+    ]
+  },
+  "projects": {
+    "heading": "Proyectos",
+    "buttons": {
+      "github": "GitHub",
+      "online": "Online"
+    },
+    "items": [
+      {
+        "title": "APP DE CLIMA REACT JS"
+      }
+    ]
   }
-  
+}

@@ -247,3 +247,59 @@ h2::after {
     margin-top: 6px;
   }
 }
+
+/* Tamaño base del botón reutilizable */
+.btn-edu {
+  border: 1px solid #2a2a2a !important;
+  background: rgba(255, 255, 255, 0.03) !important;
+  color: #eaeaea !important;
+  border-radius: 999px !important;
+  padding: .45rem .9rem !important;
+  /* base */
+  font-weight: 600 !important;
+  letter-spacing: .5px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, .35), inset 0 0 10px rgba(255, 255, 255, .02);
+  transition: transform .2s ease, box-shadow .3s ease, background .3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn-edu:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, .5), 0 0 18px rgba(255, 255, 255, .08) inset;
+  background: rgba(255, 255, 255, 0.06) !important;
+}
+
+.btn-edu:active {
+  transform: translateY(0);
+}
+
+.btn-edu i {
+  font-size: 18px;
+  line-height: 0;
+}
+
+/* === Variante chica (compat con Bootstrap .btn-sm) === */
+.btn-edu.btn-sm {
+  padding: .30rem .65rem !important;
+  font-size: .85rem;
+  /* ajusta texto */
+  gap: 6px;
+}
+
+.btn-edu.btn-sm i {
+  font-size: 16px;
+}
+
+/* (opcional) variante grande por si la necesitás */
+.btn-edu.btn-lg {
+  padding: .6rem 1.1rem !important;
+  font-size: 1rem;
+}
+
+.btn-edu.btn-lg i {
+  font-size: 20px;
+}

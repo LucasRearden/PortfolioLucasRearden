@@ -11,6 +11,7 @@ export const AboutMe = () => {
       <div className='fondoabout'>
         <Tecnologias></Tecnologias>
         <Educacion></Educacion>
+        <Proyectos></Proyectos>
       </div>
       
     </>

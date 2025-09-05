@@ -1,0 +1,25 @@
+
+:root {
+    color-scheme: dark;
+}
+
+html,
+body,
+#root {
+    min-height: 100dvh;
+  
+    background: #0f0f0f;
+
+}
+
+body {
+    margin: 0;
+    
+    color: #eaeaea;
+    
+}
+
+
+section:last-of-type {
+    margin-bottom: 0;
+}

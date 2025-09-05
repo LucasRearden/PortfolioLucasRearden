@@ -1,11 +1,12 @@
 import { useEffect, useRef } from "react";
 import Rating from "@mui/material/Rating";
 import Stack from "@mui/material/Stack";
+import { useTranslation } from "react-i18next";
 import "../../styles/tecnologias.css";
-import { skills } from "./skills.js";
 export const Tecnologias = () => {
+  const { t } = useTranslation();
   const scrollRef = useRef(null);
-
+  const skills = t("skills", { returnObjects: true });
   useEffect(() => {
     if (scrollRef.current) {
 
