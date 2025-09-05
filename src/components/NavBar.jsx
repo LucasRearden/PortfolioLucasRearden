@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "../styles/navBar.css";
 import "../styles/educacion.css"; // para usar .btn-edu
-
+import loguito from "../assets/L.png"
 export const NavBar = () => {
     const { t } = useTranslation();
 
@@ -12,7 +12,7 @@ export const NavBar = () => {
             <div className="container nav-row">
                 {/* Izquierda: logo */}
                 <NavLink to="/" className="brand">
-                    <img src="/L.ico" alt="Logo" className="logo-shine" />
+                    <img src={loguito} alt="Logo" className="logo-shine" />
                 </NavLink>
 
 
