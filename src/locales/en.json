@@ -244,6 +244,8 @@
         "location": "Montevideo, UY",
         "email_value": "lucasrearden2014@gmail.com",
         "phone_value_label": "+598 93 977 402",
-        "phone_value_href": "+59893977402"
+        "phone_value_href": "+59893977402",
+        "success_msg": "It was sent successfully",
+        "error_msg": "Error, please try again later."
     }
 }
