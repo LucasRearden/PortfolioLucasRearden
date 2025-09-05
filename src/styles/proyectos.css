@@ -2,10 +2,26 @@
 .proyectos-viewport {
     min-height: 52vh;
     display: flex;
+    flex-direction: column;
+    /* para que el h2 quede arriba */
     justify-content: center;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    gap: 18px;
+    padding: 24px 0;
+}
+
+/* Título (mismo look que tu h2 global gris) */
+.projects-heading {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #ffffff, #cfcfcf, #8f8f8f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 12px rgba(200, 200, 200, 0.35);
+    margin: 0 0 6px;
 }
 
 /* Card */
@@ -18,9 +34,9 @@
     padding: 14px;
 }
 
-/* Animación flotante */
+/* Animación flotante (x3 de amplitud) */
 .float-move {
-    animation: drift 6s ease-in-out infinite alternate;
+    animation: drift-strong 6s ease-in-out infinite alternate;
 }
 
 .float-move:hover {
@@ -28,13 +44,13 @@
     transform: translateY(-2px);
 }
 
-@keyframes drift {
+@keyframes drift-strong {
     0% {
-        transform: translateX(-10px) rotate(-0.2deg)
+        transform: translateX(-30px) rotate(-0.6deg);
     }
 
     100% {
-        transform: translateX(10px) rotate(0.2deg)
+        transform: translateX(30px) rotate(0.6deg);
     }
 }
 
@@ -46,7 +62,6 @@
     border: 1px solid #2a2a2a;
     background: #0d0d0d;
     aspect-ratio: 16/10;
-    /* mantiene proporción */
 }
 
 .project-img {
@@ -61,7 +76,7 @@
     transform: scale(1.03);
 }
 
-/* Fila: título izq / botones der */
+/* Fila: título / botones */
 .project-body {
     display: flex;
     align-items: center;
@@ -95,7 +110,7 @@
     }
 }
 
-/* Accesibilidad: usuarios con reducción de movimiento */
+/* Accesibilidad */
 @media (prefers-reduced-motion: reduce) {
     .float-move {
         animation: none;

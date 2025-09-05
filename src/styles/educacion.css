@@ -17,24 +17,7 @@ h2 {
   text-shadow: 0 0 12px rgba(200, 200, 200, 0.4);
 }
 
-/* Línea decorativa debajo del h2 (desactivada) */
-h2::after {
-  content: "";
-  display: none;
-}
-
-/* Animación del degradado gris */
-@keyframes shineGray {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  100% {
-    background-position: 200% 50%;
-  }
-}
-
-/* ===== Animación títulos (h2 y h3) ===== */
+/* Animación títulos */
 .fade-title {
   opacity: 0;
   transform: translateY(20px);
@@ -56,36 +39,29 @@ h2::after {
   max-width: 900px;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
   color: #eaeaea;
+  text-align: center;
+  /* Centrar subtítulos */
 }
 
 /* ===== Subtítulos de sección (h3) ===== */
 .section-card h3 {
-  text-align: center;
   margin-bottom: 14px;
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: 2px;
-  position: relative;
   display: inline-block;
   padding: .45rem 1.1rem;
   border-radius: 999px;
-  background: linear-gradient(180deg, #161616, #0f0f0f);
-  border: 1px solid #2a2a2a;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, .45), inset 0 0 10px rgba(255, 255, 255, .03);
 
-  /* Degradado de texto igual al h2 */
+  /* Degradado gris como el h2 */
   background: linear-gradient(90deg, #ffffff, #bfbfbf, #3a3a3a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  position: relative;
 }
 
-/* Quitar las líneas viejas */
-.section-card h3::before,
-.section-card h3::after {
-  display: none;
-}
-
-/* Halo sutil debajo */
+/* Halo debajo de subtítulos */
 .section-card h3::after {
   content: "";
   position: absolute;
@@ -98,6 +74,17 @@ h2::after {
   background: linear-gradient(90deg, #ffffff30, #bfbfbf40, #3a3a3a30);
   filter: blur(1px);
   animation: shineGray 3s linear infinite;
+}
+
+/* Animación degradado gris */
+@keyframes shineGray {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 200% 50%;
+  }
 }
 
 /* ===== Barra de idiomas ===== */
@@ -114,7 +101,6 @@ h2::after {
 .progress-lng__bar {
   height: 100%;
   width: 0;
-  /* seteado inline */
   background: linear-gradient(90deg, #ffffff, #bdbdbd, #3a3a3a);
   border-radius: 999px;
   transition: width .8s ease;
@@ -133,7 +119,6 @@ h2::after {
 .media-img {
   display: block;
   width: 100%;
-  height: auto;
   border-radius: 10px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   cursor: pointer;
@@ -155,48 +140,18 @@ h2::after {
   color: #cfcfcf;
 }
 
-/* Descripción grande a la derecha */
-.media-desc {
-  font-size: 1.05rem;
-  line-height: 1.65;
-  color: #eaeaea;
-}
-
-/* Ajuste responsive */
-@media (max-width: 768px) {
-  .media-row {
-    row-gap: 8px;
-  }
-
-  .media-desc {
-    margin-top: 4px;
-  }
-}
-
-/* Centrar subtítulos (IDIOMAS, UTU, ORT) */
-.section-card {
-  text-align: center;
-}
-
-.section-card .section-subtitle {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Tarjeta de descripción a la derecha: más linda y legible */
+/* ===== Descripción a la derecha ===== */
 .media-desc-card {
   text-align: left;
-  /* no hereda el center del contenedor */
   background: linear-gradient(180deg, #121212, #0e0e0e);
   border: 1px solid #2a2a2a;
   border-radius: 12px;
   padding: 16px 18px;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, .35), inset 0 0 10px rgba(255, 255, 255, .02);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, .35),
+    inset 0 0 10px rgba(255, 255, 255, .02);
   position: relative;
 }
 
-/* Acento sutil en el borde izquierdo */
 .media-desc-card::before {
   content: "";
   position: absolute;
@@ -208,57 +163,25 @@ h2::after {
   background: linear-gradient(180deg, #ffffff30, #bfbfbf3d, #3a3a3a30);
 }
 
-/* Tipografía de la descripción */
 .media-desc {
   font-size: 1.02rem;
   line-height: 1.7;
   color: #eaeaea;
 }
 
-
+/* Botones */
 .media-caption .btn,
-.media-desc-card .btn {
-  border: 1px solid #2a2a2a !important;
-  background: rgba(255, 255, 255, 0.03) !important;
-  color: #eaeaea !important;
-  border-radius: 999px !important;
-  padding: .45rem .9rem !important;
-  font-weight: 600 !important;
-  letter-spacing: .5px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, .35), inset 0 0 10px rgba(255, 255, 255, .02);
-  transition: transform .2s ease, box-shadow .3s ease, background .3s ease;
-}
-
-.media-caption .btn:hover,
-.media-desc-card .btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 22px rgba(0, 0, 0, .5), 0 0 18px rgba(255, 255, 255, .08) inset;
-  background: rgba(255, 255, 255, 0.06) !important;
-}
-
-.media-caption .btn:active,
-.media-desc-card .btn:active {
-  transform: translateY(0);
-}
-
-/* Ajustes responsivos */
-@media (max-width: 768px) {
-  .media-desc-card {
-    margin-top: 6px;
-  }
-}
-
-/* Tamaño base del botón reutilizable */
+.media-desc-card .btn,
 .btn-edu {
   border: 1px solid #2a2a2a !important;
   background: rgba(255, 255, 255, 0.03) !important;
   color: #eaeaea !important;
   border-radius: 999px !important;
   padding: .45rem .9rem !important;
-  /* base */
   font-weight: 600 !important;
   letter-spacing: .5px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, .35), inset 0 0 10px rgba(255, 255, 255, .02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, .35),
+    inset 0 0 10px rgba(255, 255, 255, .02);
   transition: transform .2s ease, box-shadow .3s ease, background .3s ease;
   display: inline-flex;
   align-items: center;
@@ -267,12 +190,17 @@ h2::after {
   white-space: nowrap;
 }
 
+.media-caption .btn:hover,
+.media-desc-card .btn:hover,
 .btn-edu:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 22px rgba(0, 0, 0, .5), 0 0 18px rgba(255, 255, 255, .08) inset;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, .5),
+    0 0 18px rgba(255, 255, 255, .08) inset;
   background: rgba(255, 255, 255, 0.06) !important;
 }
 
+.media-caption .btn:active,
+.media-desc-card .btn:active,
 .btn-edu:active {
   transform: translateY(0);
 }
@@ -282,11 +210,10 @@ h2::after {
   line-height: 0;
 }
 
-/* === Variante chica (compat con Bootstrap .btn-sm) === */
+/* Tamaños de botón */
 .btn-edu.btn-sm {
   padding: .30rem .65rem !important;
   font-size: .85rem;
-  /* ajusta texto */
   gap: 6px;
 }
 
@@ -294,7 +221,6 @@ h2::after {
   font-size: 16px;
 }
 
-/* (opcional) variante grande por si la necesitás */
 .btn-edu.btn-lg {
   padding: .6rem 1.1rem !important;
   font-size: 1rem;
@@ -302,4 +228,19 @@ h2::after {
 
 .btn-edu.btn-lg i {
   font-size: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .media-row {
+    row-gap: 8px;
+  }
+
+  .media-desc {
+    margin-top: 4px;
+  }
+
+  .media-desc-card {
+    margin-top: 6px;
+  }
 }

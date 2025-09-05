@@ -7,7 +7,8 @@
     "general": {
         "title": "Full-Stack Developer",
         "location": "📍 Montevideo, Uruguay",
-        "bio": "I am a proactive young developer with strong learning capacity, adaptability, and good performance in teamwork. I stand out for my discipline, responsibility, and commitment. I am willing to learn new skills and improve continuously, focused on developing efficient solutions. If you want to work together, do not hesitate to contact me!"
+        "bio": "I am a proactive young developer with strong learning capacity, adaptability, and good performance in teamwork. I stand out for my discipline, responsibility, and commitment. I am willing to learn new skills and improve continuously, focused on developing efficient solutions. If you want to work together, do not hesitate to contact me!",
+        "welcome": "Welcome to my page!"
     },
     "cv": {
         "label": "CV",
@@ -18,10 +19,6 @@
         "title": "About me",
         "p1": "I am passionate about building useful products...",
         "p2": "I enjoy working with React, Node, and databases."
-    },
-    "contact": {
-        "title": "Contact",
-        "subtitle": "Lets talk about your project"
     },
     "skills": [
         {
@@ -230,5 +227,23 @@
                 "title": "React Weather App"
             }
         ]
+    },
+    "contact": {
+        "title_left": "GET IN",
+        "title_right": "TOUCH",
+        "tagline": "Available for new projects.<1/>Drop me a message and let's talk.",
+        "name": "Name",
+        "name_ph": "Your name",
+        "email": "Email",
+        "email_ph": "you@mail.com",
+        "subject": "Subject",
+        "subject_ph": "Message subject",
+        "message": "Message",
+        "message_ph": "Type your message...",
+        "send": "Send",
+        "location": "Montevideo, UY",
+        "email_value": "lucasrearden2014@gmail.com",
+        "phone_value_label": "+598 93 977 402",
+        "phone_value_href": "+59893977402"
     }
 }

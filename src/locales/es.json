@@ -7,21 +7,13 @@
   "general": {
     "title": "Desarrollador Full Stack",
     "location": "📍 Montevideo, Uruguay",
-    "bio": "Soy un joven proactivo, con gran capacidad de aprendizaje, adaptación y buen desempeño en trabajo en equipo. Destaco por mi disciplina, responsabilidad y compromiso. Estoy dispuesto a aprender nuevas habilidades y mejorar continuamente, enfocado en desarrollar soluciones eficientes. ¡Si quieres trabajar juntos no dudes en contactarme!"
+    "bio": "Soy un joven proactivo, con gran capacidad de aprendizaje, adaptación y buen desempeño en trabajo en equipo. Destaco por mi disciplina, responsabilidad y compromiso. Estoy dispuesto a aprender nuevas habilidades y mejorar continuamente, enfocado en desarrollar soluciones eficientes. ¡Si quieres trabajar juntos no dudes en contactarme!",
+    "welcome": "¡Bienvenido a mi página!"
   },
   "cv": {
     "label": "CV",
     "es": "📄 Español",
     "en": "📄 Inglés"
-  },
-  "about": {
-    "title": "Sobre mí",
-    "p1": "Me apasiona construir productos útiles...",
-    "p2": "Disfruto trabajar con React, Node y bases de datos."
-  },
-  "contact": {
-    "title": "Contacto",
-    "subtitle": "Hablemos sobre tu proyecto"
   },
   "skills": [
     {
@@ -230,5 +222,23 @@
         "title": "APP DE CLIMA REACT JS"
       }
     ]
+  },
+  "contact": {
+    "title_left": "PONETE EN",
+    "title_right": "CONTACTO",
+    "tagline": "Disponible para nuevos proyectos.<1/>Escribime y lo charlamos.",
+    "name": "Nombre",
+    "name_ph": "Tu nombre",
+    "email": "Correo",
+    "email_ph": "tucorreo@mail.com",
+    "subject": "Asunto",
+    "subject_ph": "Motivo del mensaje",
+    "message": "Mensaje",
+    "message_ph": "Escribí tu mensaje...",
+    "send": "Enviar",
+    "location": "Montevideo, UY",
+    "email_value": "lucasrearden2014@gmail.com",
+    "phone_value_label": "+598 93 977 402",
+    "phone_value_href": "+59893977402"
   }
 }

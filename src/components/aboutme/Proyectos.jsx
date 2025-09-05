@@ -1,20 +1,25 @@
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo } from "react";
 import { useTranslation } from "react-i18next";
-import "../../styles/proyectos.css";   // layout/animación de proyectos
-import "../../styles/educacion.css";   // trae .btn-edu reutilizable
+import "../../styles/proyectos.css";
+import "../../styles/educacion.css";
 import clima from "../../assets/clima.png";
 
 export const Proyectos = () => {
   const { t } = useTranslation();
 
-  // Textos traducidos
+  // animación de títulos (si usás .fade-title en otros lados)
+  useEffect(() => {
+    document.querySelectorAll(".fade-title").forEach((el, i) => {
+      setTimeout(() => el.classList.add("show"), 200 * i);
+    });
+  }, []);
+
   const itemsText = t("projects.items", { returnObjects: true }) || [];
   const labels = {
     github: t("projects.buttons.github"),
     online: t("projects.buttons.online"),
   };
 
-  // Metadatos NO traducibles (imagen y links)
   const itemsMeta = useMemo(
     () => [
       {
@@ -26,19 +31,19 @@ export const Proyectos = () => {
     []
   );
 
-  // Mezclar textos con metadatos
   const items = itemsText.map((txt, i) => ({ ...txt, ...(itemsMeta[i] || {}) }));
 
   return (
     <section className="container proyectos-viewport">
+      {/* Título estilo “Educación” */}
+      <h2 className="fade-title projects-heading">Proyectos</h2>
+
       {items.map((p) => (
         <article className="project-card float-move" key={p.title}>
-          {/* Imagen arriba */}
           <figure className="project-figure">
             <img src={p.img} alt={p.title} className="project-img" />
           </figure>
 
-          {/* Título izq + botones der */}
           <div className="project-body">
             <h3 className="project-title">{p.title}</h3>
 

@@ -5,45 +5,60 @@ import perfil from "../assets/YO.jpg";
 import cvES from "../assets/LucasReardenCV.pdf";
 import cvEN from "../assets/CVLucasRearden.pdf";
 import { useTranslation } from "react-i18next";
+
 export const General = () => {
   const { t } = useTranslation();
+
   return (
     <div className="fondo">
       <div className="container my-5" id="fondoCard">
         <div className="row gy-3">
 
-          {/* Fila 1: fotogato */}
+          {/* Fotogato */}
           <div className="col-12">
             <div className="fotogato bg-dark rounded-4 shadow overflow-hidden mb-4">
-              <img src={foto} alt="banner gato" className="img-fluid cat-img d-block w-100" />
+              <img
+                src={foto}
+                alt="banner gato"
+                className="img-fluid cat-img d-block w-100"
+              />
             </div>
           </div>
 
-          {/* Fila 2: col izquierda (perfil) + col derecha (botones en columna) */}
+          {/* perfil izquierda + bienvenida centro + botones derecha */}
           <div className="col-12">
             <div className="row g-3 align-items-center">
 
               {/* Izquierda: perfil */}
-              <div className="col-12 col-md-6">
+              <div className="col-12 col-md-4">
                 <div className="info py-2">
                   <div className="d-flex align-items-center bg-dark rounded-3 shadow-sm py-3 px-4">
-                    <img src={perfil} alt="perfil" className="rounded-circle me-3" width="56" height="56" />
+                    <img
+                      src={perfil}
+                      alt="perfil"
+                      className="rounded-circle me-3"
+                      width="56"
+                      height="56"
+                    />
                     <div>
                       <h6 className="mb-0 text-white">Lucas Rearden</h6>
                       <small className="text-secondary">{t("general.title")} ✨</small>
                     </div>
-                    <div>
-                    </div>
-
                   </div>
                 </div>
               </div>
 
+              {/* mensaje de bienvenida */}
+              <div className="col-12 col-md-4 d-flex justify-content-center">
+                <div className="welcome-box text-center p-3">
+                  <h3 className="welcome-text"> {t("general.welcome")}</h3>
+                </div>
+              </div>
 
-              <div className="col-12 col-md-6 d-flex flex-column align-items-end">
+              {/* Derecha: links y CV */}
+              <div className="col-12 col-md-4 d-flex flex-column align-items-end">
                 <div className="icon-group d-flex flex-column align-items-end">
-
-
+                  {/* Github y LinkedIn */}
                   <div className="d-flex gap-3 mb-2">
                     <a
                       href="https://github.com/LucasRearden"
@@ -70,7 +85,7 @@ export const General = () => {
                     </a>
                   </div>
 
-
+                  {/* Botón CV */}
                   <div className="dropdown custom-btn w-100">
                     <button
                       className="btn btn-outline-light dropdown-toggle w-100 d-flex align-items-center justify-content-center gap-2"
@@ -87,13 +102,23 @@ export const General = () => {
                     </button>
                     <ul className="dropdown-menu dropdown-menu-dark w-100 text-center">
                       <li>
-                        <a className="dropdown-item" href={cvES} target="_blank" rel="noopener noreferrer">
-                        {t("cv.es")}
+                        <a
+                          className="dropdown-item"
+                          href={cvES}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {t("cv.es")}
                         </a>
                       </li>
                       <li>
-                        <a className="dropdown-item" href={cvEN} target="_blank" rel="noopener noreferrer">
-                        {t("cv.en")}
+                        <a
+                          className="dropdown-item"
+                          href={cvEN}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {t("cv.en")}
                         </a>
                       </li>
                     </ul>
@@ -103,16 +128,10 @@ export const General = () => {
                   <p className="text-white mt-2 mb-0 text-end">{t("general.location")}</p>
                 </div>
               </div>
-
-
-
-
-
-
             </div>
           </div>
 
-          {/* Fila 3: texto */}
+          {/* descripción */}
           <div className="col-12">
             <div className="texto bg-dark rounded-4 shadow p-4">
               <p className="text-descripcion mb-0">{t("general.bio")}</p>
@@ -121,6 +140,6 @@ export const General = () => {
 
         </div>
       </div>
-    </div >
+    </div>
   );
 };

@@ -1,8 +1,7 @@
-/* 
-   FONDO Y WRAPPER GENERAL
- */
+/* ===== Fondo general ===== */
 .fondo {
-    background-color: #241f19;
+    background-color: #0f0f0f;
+    /* igual al contact/info-box */
     width: 100%;
     min-height: 100vh;
     margin: 0;
@@ -10,25 +9,20 @@
     display: flow-root;
 }
 
-.general-wrapper {
+/* ===== Wrapper oscuro (coherente con educacion/contact) ===== */
+.general-wrapper,
+#fondoCard {
     width: min(1100px, 92%);
     margin: 5rem auto 0 auto;
     min-height: 70vh;
-    background: #1a1818;
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: #121212;
+    /* mismo que section-card */
+    border-radius: 16px;
     padding: 32px 24px 24px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, .18);
-    perspective: 900px;
-    transform-style: preserve-3d;
-    overflow: visible;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
 }
 
-/*
-   GATO (animación de salto)
-*/
+/* ===== Animación gato ===== */
 .custom-card {
     padding-inline: 0;
     padding-top: 0;
@@ -39,10 +33,9 @@
     max-height: 300px;
     margin: 0 auto;
     object-fit: cover;
-    filter: drop-shadow(0 3px 8px rgba(0, 0, 0, .55));
+    filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.55));
     animation: cat-jump 4s ease-in-out infinite;
 }
-
 
 @keyframes cat-jump {
     0% {
@@ -53,22 +46,20 @@
         transform: translateY(-40px) scale(1.05);
     }
 
-
     100% {
         transform: translateY(0) scale(1);
     }
-
 }
 
-/*
-   TARJETA DE PERFIL
-*/
-.profile-card {
+/* ===== Tarjeta perfil ===== */
+.profile-card,
+.info>div {
     display: flex;
     align-items: center;
     gap: 16px;
     padding: 12px 16px;
-    background: #242222;
+    background: #1a1818;
+    /* mismo que #fondoCard */
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, .25);
     width: fit-content;
@@ -81,11 +72,6 @@
     object-fit: cover;
 }
 
-.profile-info {
-    display: flex;
-    flex-direction: column;
-}
-
 .profile-name {
     margin: 0;
     font-size: 1.2rem;
@@ -95,20 +81,10 @@
 .profile-role {
     margin: 0;
     font-size: 0.9rem;
-    color: #aaa;
+    color: #bbb;
 }
 
-#fondoCard {
-    background-color: #1a1818;
-}
-
-@media (min-width: 768px) {
-    .ms-md-auto {
-        max-width: 220px;
-    }
-}
-
-
+/* ===== Botones e íconos ===== */
 .icon-circle {
     display: inline-flex;
     justify-content: center;
@@ -117,7 +93,9 @@
     height: 44px;
     border-radius: 50%;
     background-color: #1a1818;
+    /* coherente */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .icon-circle img {
@@ -125,23 +103,6 @@
     height: 22px;
     object-fit: contain;
 }
-
-
-.icon-small {
-    width: 18px;
-    height: 18px;
-    object-fit: contain;
-}
-
-
-
-.icon-circle,
-.custom-btn,
-.info>div,
-.texto {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
 
 .icon-circle:hover,
 .custom-btn:hover,
@@ -151,9 +112,53 @@
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
 }
 
-.text-descripcion{
+.icon-small {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+/* ===== Texto descriptivo ===== */
+.texto {
+    background: #121212;
+    /* mismo que section-card */
+    border-radius: 12px;
+    color: #eaeaea;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.text-descripcion {
     font-size: 15px;
-    letter-spacing: 1.5px;
-    font-weight: bold;
-    color: #fff;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    color: #eaeaea;
+}
+
+/* Caja de bienvenida */
+.welcome-box {
+    background: #121212;
+    border: 1px solid #2d2d2d;
+    border-radius: 12px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.welcome-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-text {
+    margin: 0;
+    font-weight: 900;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #ffffff, #bbbbbb, #000000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    text-shadow: 0 0 12px rgba(200, 200, 200, 0.35);
 }

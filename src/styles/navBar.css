@@ -1,5 +1,140 @@
+/* Barra oscura sencilla con blur */
+.nav-slim {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(15, 15, 15, .7);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid #2a2a2a;
+}
 
-.logo {
-    max-height: 50px;
-    max-width: 50px;
+/* Tres zonas: logo | links centrados | botón */
+.nav-row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 8px 0;
+}
+
+/* Logo */
+.brand img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: block;
+}
+
+/* Links centrados */
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.link {
+  color: #cfcfcf;
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: .4px;
+  padding: .35rem .75rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: background .2s ease, color .2s ease, border-color .2s ease;
+}
+
+.link:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, .06);
+  border-color: #2a2a2a;
+}
+
+.link.active {
+  color: #fff;
+  background: rgba(255, 255, 255, .10);
+  border-color: #2a2a2a;
+}
+
+/* Ajuste móvil: que no se rompa */
+@media (max-width: 576px) {
+  .links {
+    gap: 8px;
+  }
+
+  .link {
+    padding: .3rem .6rem;
+  }
+}
+
+.logo-shine {
+  position: relative;
+  display: inline-block;
+  height: 44px;
+  /* ajustá al tamaño que quieras */
+  width: auto;
+  filter: contrast(1.4) brightness(1.2);
+  overflow: hidden;
+}
+
+/* Franja brillante en loop */
+.logo-shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(120deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.9) 50%,
+      rgba(255, 255, 255, 0) 100%);
+  transform: skewX(-25deg);
+  animation: shine 2.5s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -150%;
+  }
+
+  100% {
+    left: 150%;
+  }
+}
+
+.logo-shine {
+  position: relative;
+  display: inline-block;
+  height: 44px;
+  /* ajustá según el tamaño del logo */
+  width: auto;
+
+  /* Brillo constante */
+  filter: contrast(1.4) brightness(1.3) drop-shadow(0 0 6px #ffffff) drop-shadow(0 0 14px #ffffff) drop-shadow(0 0 22px #ffffff);
+  overflow: hidden;
+}
+
+/* Franja brillante en loop infinito */
+.logo-shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(120deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(255, 255, 255, 0) 100%);
+  transform: skewX(-25deg);
+  animation: shine 2.5s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -150%;
+  }
+
+  100% {
+    left: 150%;
+  }
 }
