@@ -231,7 +231,7 @@
       }
     ]
   },
-  "projects": {
+    "projects": {
     "heading": "Proyectos",
     "buttons": {
       "github": "GitHub",
@@ -241,35 +241,18 @@
       {
         "title": "APP DE CLIMA REACT JS",
         "description": "Aplicación del clima que consume una API externa y muestra el pronóstico de cualquier ciudad.",
-        "tech": [
-          "React",
-          "JavaScript",
-          "API REST"
-        ]
+        "tech": ["React", "JavaScript", "API REST"]
       },
       {
         "title": "Librería – App full-stack",
         "description": "Gestión de libros con API REST propia, autenticación JWT, roles (usuario/admin) y planes plus/premium. Búsqueda con Google Books, imágenes en Cloudinary, recomendaciones con IA y reportes de uso con Chart.js.",
-        "tech": [
-          "React",
-          "Redux Toolkit",
-          "Node.js",
-          "Express",
-          "MongoDB",
-          "JWT",
-          "Vercel"
-        ]
+        "tech": ["React", "Redux Toolkit", "Node.js", "Express", "MongoDB", "JWT", "Vercel"]
       },
       {
         "title": "Batalla Naval – Juego web",
         "description": "Proyecto en equipo: juego humano contra máquina con arquitectura MVP. Patrones State, Strategy y Observer, y actualización en tiempo real entre navegadores con Server-Sent Events.",
-        "tech": [
-          "Java 21",
-          "Spring Boot",
-          "Maven",
-          "JavaScript",
-          "SSE"
-        ]
+        "tech": ["Java 21", "Spring Boot", "Maven", "JavaScript", "SSE"],
+        "note": "⏳ Alojado en Render (plan gratuito): la primera carga puede tardar hasta un minuto."
       }
     ]
   },

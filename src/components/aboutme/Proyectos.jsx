@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 import "../../styles/proyectos.css";
 import "../../styles/educacion.css";
 import clima from "../../assets/clima.png";
-// TODO: agregá las capturas en src/assets con estos nombres (o cambiá los imports)
 import libreria from "../../assets/libreria.png";
 import batallaNaval from "../../assets/batallaNaval.png";
 
@@ -24,7 +23,6 @@ export const Proyectos = () => {
   };
 
   // Metadatos NO traducibles. El orden tiene que coincidir con projects.items del JSON.
-  // Si un proyecto no tiene versión online, dejá onlineLink sin poner y el botón no aparece.
   const itemsMeta = useMemo(
     () => [
       {
@@ -37,9 +35,10 @@ export const Proyectos = () => {
         githubLink: "https://github.com/LucasRearden/frontendLib",
         onlineLink: "https://frontendlibreria.vercel.app/login",
       },
-      {
+            {
         img: batallaNaval,
-        githubLink: "https://github.com/LucasRearden/DA-2026Agosto-N4C-362596",
+        githubLink: "https://github.com/LucasRearden/BatallaNaval",
+        onlineLink: "https://batallanaval-fjgv.onrender.com/",
       },
     ],
     []
@@ -86,6 +85,8 @@ export const Proyectos = () => {
                   </a>
                 )}
               </div>
+
+              {p.note && <p className="project-note">{p.note}</p>}
             </div>
           </article>
         ))}

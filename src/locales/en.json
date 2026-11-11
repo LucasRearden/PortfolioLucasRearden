@@ -236,7 +236,7 @@
       }
     ]
   },
-  "projects": {
+    "projects": {
     "heading": "Projects",
     "buttons": {
       "github": "GitHub",
@@ -246,35 +246,18 @@
       {
         "title": "React Weather App",
         "description": "Weather app that consumes an external API and shows the forecast for any city.",
-        "tech": [
-          "React",
-          "JavaScript",
-          "REST API"
-        ]
+        "tech": ["React", "JavaScript", "REST API"]
       },
       {
         "title": "Library – Full-stack app",
         "description": "Book management app with its own REST API, JWT authentication, user/admin roles and plus/premium plans. Google Books search, Cloudinary images, AI recommendations and usage reports with Chart.js.",
-        "tech": [
-          "React",
-          "Redux Toolkit",
-          "Node.js",
-          "Express",
-          "MongoDB",
-          "JWT",
-          "Vercel"
-        ]
+        "tech": ["React", "Redux Toolkit", "Node.js", "Express", "MongoDB", "JWT", "Vercel"]
       },
       {
         "title": "Battleship – Web game",
         "description": "Team project: human vs. machine game built with an MVP architecture. State, Strategy and Observer patterns, plus real-time updates across browsers with Server-Sent Events.",
-        "tech": [
-          "Java 21",
-          "Spring Boot",
-          "Maven",
-          "JavaScript",
-          "SSE"
-        ]
+        "tech": ["Java 21", "Spring Boot", "Maven", "JavaScript", "SSE"],
+        "note": "⏳ Hosted on Render (free tier): the first load may take up to a minute."
       }
     ]
   },

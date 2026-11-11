@@ -262,3 +262,9 @@
   background: linear-gradient(90deg, #7c5cff, #22d3ee);
 }
  
+.projects-grid .project-note {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  color: #8c919c;
+}
