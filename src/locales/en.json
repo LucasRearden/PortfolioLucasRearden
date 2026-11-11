@@ -1,251 +1,301 @@
 {
-    "navbar": {
-        "general": "General",
-        "about": "About me",
-        "contact": "Contact"
+  "navbar": {
+    "general": "General",
+    "about": "About me",
+    "contact": "Contact"
+  },
+  "general": {
+    "title": "Full-Stack Developer",
+    "location": "📍 Montevideo, Uruguay",
+    "bio": "I am a proactive young developer with strong learning capacity, adaptability, and good performance in teamwork. I stand out for my discipline, responsibility, and commitment. I am willing to learn new skills and improve continuously, focused on developing efficient solutions. If you want to work together, do not hesitate to contact me!",
+    "welcome": "Welcome to my page!"
+  },
+  "cv": {
+    "label": "CV",
+    "es": "📄 Spanish",
+    "en": "📄 English"
+  },
+  "about": {
+    "title": "About me",
+    "p1": "I am passionate about building useful products...",
+    "p2": "I enjoy working with React, Node, and databases."
+  },
+  "skills": [
+    {
+      "nombre": "JavaScript",
+      "rating": 4.5
     },
-    "general": {
-        "title": "Full-Stack Developer",
-        "location": "📍 Montevideo, Uruguay",
-        "bio": "I am a proactive young developer with strong learning capacity, adaptability, and good performance in teamwork. I stand out for my discipline, responsibility, and commitment. I am willing to learn new skills and improve continuously, focused on developing efficient solutions. If you want to work together, do not hesitate to contact me!",
-        "welcome": "Welcome to my page!"
+    {
+      "nombre": "React.js",
+      "rating": 4.0
     },
-    "cv": {
-        "label": "CV",
-        "es": "📄 Spanish",
-        "en": "📄 English"
+    {
+      "nombre": "Node.js",
+      "rating": 4.0
     },
-    "about": {
-        "title": "About me",
-        "p1": "I am passionate about building useful products...",
-        "p2": "I enjoy working with React, Node, and databases."
+    {
+      "nombre": "Express.js",
+      "rating": 3
     },
-    "skills": [
-        {
-            "nombre": "JavaScript",
-            "rating": 4.5
-        },
-        {
-            "nombre": "React.js",
-            "rating": 4.0
-        },
-        {
-            "nombre": "Node.js",
-            "rating": 4.0
-        },
-        {
-            "nombre": "Express.js",
-            "rating": 3
-        },
-        {
-            "nombre": "MongoDB",
-            "rating": 4
-        },
-        {
-            "nombre": "Mongoose",
-            "rating": 3.5
-        },
-        {
-            "nombre": "HTML5",
-            "rating": 4.5
-        },
-        {
-            "nombre": "Cascading Style Sheets (CSS)",
-            "rating": 4
-        },
-        {
-            "nombre": "Git",
-            "rating": 4
-        },
-        {
-            "nombre": "Postman API",
-            "rating": 4
-        },
-        {
-            "nombre": "Scrum",
-            "rating": 4
-        },
-        {
-            "nombre": "Agile Methodologies",
-            "rating": 4
-        },
-        {
-            "nombre": "C#",
-            "rating": 4
-        },
-        {
-            "nombre": ".NET Framework",
-            "rating": 3.5
-        },
-        {
-            "nombre": "SQL",
-            "rating": 4.5
-        },
-        {
-            "nombre": "MySQL",
-            "rating": 4.5
-        },
-        {
-            "nombre": "Database Design",
-            "rating": 4.0
-        },
-        {
-            "nombre": "Relational Database",
-            "rating": 4.0
-        },
-        {
-            "nombre": "Database Development",
-            "rating": 4.0
-        },
-        {
-            "nombre": "Docker",
-            "rating": 3
-        },
-        {
-            "nombre": "Agile Application Development",
-            "rating": 4.0
-        },
-        {
-            "nombre": "Object-Oriented Programming (OOP)",
-            "rating": 4.5
-        },
-        {
-            "nombre": "Programming",
-            "rating": 5
-        },
-        {
-            "nombre": "Software Development",
-            "rating": 4
-        },
-        {
-            "nombre": "Web Development",
-            "rating": 4.5
-        },
-        {
-            "nombre": "JIRA",
-            "rating": 3
-        },
-        {
-            "nombre": "HTML",
-            "rating": 5
-        },
-        {
-            "nombre": "CentOS",
-            "rating": 3
-        },
-        {
-            "nombre": "Ansible",
-            "rating": 2
-        },
-        {
-            "nombre": "Zabbix",
-            "rating": 2
-        },
-        {
-            "nombre": "Red Hat Linux",
-            "rating": 3
-        },
-        {
-            "nombre": "Quality Assurance",
-            "rating": 4
-        },
-        {
-            "nombre": "Cyber Network Fundamentals",
-            "rating": 2
-        },
-        {
-            "nombre": "LAN-WAN",
-            "rating": 4
-        },
-        {
-            "nombre": "Operating Systems",
-            "rating": 3.5
-        },
-        {
-            "nombre": "Structured Cabling",
-            "rating": 4
-        },
-        {
-            "nombre": "Computer Repair",
-            "rating": 3
-        },
-        {
-            "nombre": "Teamwork",
-            "rating": 5
-        },
-        {
-            "nombre": "Java",
-            "rating": 3.5
-        },
-        {
-            "nombre": "Java SE",
-            "rating": 3
-        },
-        {
-            "nombre": "Databases",
-            "rating": 4.5
-        }
-    ],
-    "education": {
-        "heading": "Education",
-        "languagesHeading": "Languages",
-        "languages": [
-            {
-                "name": "Spanish",
-                "level": "Native",
-                "value": 100
-            },
-            {
-                "name": "English",
-                "level": "B2 Advanced",
-                "value": 80
-            }
-        ],
-        "items": [
-            {
-                "title": "UTU – Directorate of Technical–Professional Education",
-                "caption": "Technological Baccalaureate in IT",
-                "hrefText": "View certificate",
-                "description": "Technical institute in Montevideo offering practical, job-oriented training in programming, networks, web design, and IT support."
-            },
-            {
-                "title": "Universidad ORT Uruguay",
-                "caption": "IT Analyst",
-                "hrefText": "Open certificate",
-                "description": "Tertiary career focused on designing, developing, implementing, and maintaining software systems. Blends theory and practice in programming, databases, networks, and project management for tech roles in organizations."
-            }
-        ]
+    {
+      "nombre": "MongoDB",
+      "rating": 4
     },
-    "projects": {
-        "heading": "Projects",
-        "buttons": {
-            "github": "GitHub",
-            "online": "Live"
-        },
-        "items": [
-            {
-                "title": "React Weather App"
-            }
-        ]
+    {
+      "nombre": "Mongoose",
+      "rating": 3.5
     },
-    "contact": {
-        "title_left": "GET IN",
-        "title_right": "TOUCH",
-        "tagline": "Available for new projects.<1/>Drop me a message and let's talk.",
-        "name": "Name",
-        "name_ph": "Your name",
-        "email": "Email",
-        "email_ph": "you@mail.com",
-        "subject": "Subject",
-        "subject_ph": "Message subject",
-        "message": "Message",
-        "message_ph": "Type your message...",
-        "send": "Send",
-        "location": "Montevideo, UY",
-        "email_value": "lucasrearden2014@gmail.com",
-        "phone_value_label": "+598 93 977 402",
-        "phone_value_href": "+59893977402",
-        "success_msg": "It was sent successfully",
-        "error_msg": "Error, please try again later."
+    {
+      "nombre": "HTML5",
+      "rating": 4.5
+    },
+    {
+      "nombre": "Cascading Style Sheets (CSS)",
+      "rating": 4
+    },
+    {
+      "nombre": "Git",
+      "rating": 4
+    },
+    {
+      "nombre": "Postman API",
+      "rating": 4
+    },
+    {
+      "nombre": "Scrum",
+      "rating": 4
+    },
+    {
+      "nombre": "Agile Methodologies",
+      "rating": 4
+    },
+    {
+      "nombre": "C#",
+      "rating": 4
+    },
+    {
+      "nombre": ".NET Framework",
+      "rating": 3.5
+    },
+    {
+      "nombre": "SQL",
+      "rating": 4.5
+    },
+    {
+      "nombre": "MySQL",
+      "rating": 4.5
+    },
+    {
+      "nombre": "Database Design",
+      "rating": 4.0
+    },
+    {
+      "nombre": "Relational Database",
+      "rating": 4.0
+    },
+    {
+      "nombre": "Database Development",
+      "rating": 4.0
+    },
+    {
+      "nombre": "Docker",
+      "rating": 3
+    },
+    {
+      "nombre": "Agile Application Development",
+      "rating": 4.0
+    },
+    {
+      "nombre": "Object-Oriented Programming (OOP)",
+      "rating": 4.5
+    },
+    {
+      "nombre": "Programming",
+      "rating": 5
+    },
+    {
+      "nombre": "Software Development",
+      "rating": 4
+    },
+    {
+      "nombre": "Web Development",
+      "rating": 4.5
+    },
+    {
+      "nombre": "JIRA",
+      "rating": 3
+    },
+    {
+      "nombre": "HTML",
+      "rating": 5
+    },
+    {
+      "nombre": "CentOS",
+      "rating": 3
+    },
+    {
+      "nombre": "Ansible",
+      "rating": 2
+    },
+    {
+      "nombre": "Zabbix",
+      "rating": 2
+    },
+    {
+      "nombre": "Red Hat Linux",
+      "rating": 3
+    },
+    {
+      "nombre": "Quality Assurance",
+      "rating": 4
+    },
+    {
+      "nombre": "Cyber Network Fundamentals",
+      "rating": 2
+    },
+    {
+      "nombre": "LAN-WAN",
+      "rating": 4
+    },
+    {
+      "nombre": "Operating Systems",
+      "rating": 3.5
+    },
+    {
+      "nombre": "Structured Cabling",
+      "rating": 4
+    },
+    {
+      "nombre": "Computer Repair",
+      "rating": 3
+    },
+    {
+      "nombre": "Teamwork",
+      "rating": 5
+    },
+    {
+      "nombre": "Java",
+      "rating": 3.5
+    },
+    {
+      "nombre": "Java SE",
+      "rating": 3
+    },
+    {
+      "nombre": "Databases",
+      "rating": 4.5
+    },
+    {
+      "nombre": "Redux Toolkit",
+      "rating": 4
+    },
+    {
+      "nombre": "Java Spring Boot",
+      "rating": 3.5
+    },
+    {
+      "nombre": "Maven",
+      "rating": 3
+    },
+    {
+      "nombre": "JWT Authentication",
+      "rating": 4
+    },
+    {
+      "nombre": "Vercel",
+      "rating": 4
     }
+  ],
+  "education": {
+    "heading": "Education",
+    "languagesHeading": "Languages",
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "Native",
+        "value": 100
+      },
+      {
+        "name": "English",
+        "level": "B2 Advanced",
+        "value": 80
+      }
+    ],
+    "items": [
+      {
+        "title": "UTU – Directorate of Technical–Professional Education",
+        "caption": "Technological Baccalaureate in IT",
+        "hrefText": "View certificate",
+        "description": "Technical institute in Montevideo offering practical, job-oriented training in programming, networks, web design, and IT support."
+      },
+      {
+        "title": "Universidad ORT Uruguay",
+        "caption": "IT Analyst",
+        "hrefText": "Open certificate",
+        "description": "Tertiary career focused on designing, developing, implementing, and maintaining software systems. Blends theory and practice in programming, databases, networks, and project management for tech roles in organizations."
+      }
+    ]
+  },
+  "projects": {
+    "heading": "Projects",
+    "buttons": {
+      "github": "GitHub",
+      "online": "Live"
+    },
+    "items": [
+      {
+        "title": "React Weather App",
+        "description": "Weather app that consumes an external API and shows the forecast for any city.",
+        "tech": [
+          "React",
+          "JavaScript",
+          "REST API"
+        ]
+      },
+      {
+        "title": "Library – Full-stack app",
+        "description": "Book management app with its own REST API, JWT authentication, user/admin roles and plus/premium plans. Google Books search, Cloudinary images, AI recommendations and usage reports with Chart.js.",
+        "tech": [
+          "React",
+          "Redux Toolkit",
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "JWT",
+          "Vercel"
+        ]
+      },
+      {
+        "title": "Battleship – Web game",
+        "description": "Team project: human vs. machine game built with an MVP architecture. State, Strategy and Observer patterns, plus real-time updates across browsers with Server-Sent Events.",
+        "tech": [
+          "Java 21",
+          "Spring Boot",
+          "Maven",
+          "JavaScript",
+          "SSE"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title_left": "GET IN",
+    "title_right": "TOUCH",
+    "tagline": "Available for new projects.<1/>Drop me a message and let's talk.",
+    "name": "Name",
+    "name_ph": "Your name",
+    "email": "Email",
+    "email_ph": "you@mail.com",
+    "subject": "Subject",
+    "subject_ph": "Message subject",
+    "message": "Message",
+    "message_ph": "Type your message...",
+    "send": "Send",
+    "location": "Montevideo, UY",
+    "email_value": "lucasrearden2014@gmail.com",
+    "phone_value_label": "+598 93 977 402",
+    "phone_value_href": "+59893977402",
+    "success_msg": "It was sent successfully",
+    "error_msg": "Error, please try again later."
+  }
 }

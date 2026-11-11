@@ -179,6 +179,26 @@
     {
       "nombre": "Bases de datos",
       "rating": 4.5
+    },
+    {
+      "nombre": "Redux Toolkit",
+      "rating": 4
+    },
+    {
+      "nombre": "Java Spring Boot",
+      "rating": 3.5
+    },
+    {
+      "nombre": "Maven",
+      "rating": 3
+    },
+    {
+      "nombre": "Autenticación JWT",
+      "rating": 4
+    },
+    {
+      "nombre": "Vercel",
+      "rating": 4
     }
   ],
   "education": {
@@ -219,7 +239,37 @@
     },
     "items": [
       {
-        "title": "APP DE CLIMA REACT JS"
+        "title": "APP DE CLIMA REACT JS",
+        "description": "Aplicación del clima que consume una API externa y muestra el pronóstico de cualquier ciudad.",
+        "tech": [
+          "React",
+          "JavaScript",
+          "API REST"
+        ]
+      },
+      {
+        "title": "Librería – App full-stack",
+        "description": "Gestión de libros con API REST propia, autenticación JWT, roles (usuario/admin) y planes plus/premium. Búsqueda con Google Books, imágenes en Cloudinary, recomendaciones con IA y reportes de uso con Chart.js.",
+        "tech": [
+          "React",
+          "Redux Toolkit",
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "JWT",
+          "Vercel"
+        ]
+      },
+      {
+        "title": "Batalla Naval – Juego web",
+        "description": "Proyecto en equipo: juego humano contra máquina con arquitectura MVP. Patrones State, Strategy y Observer, y actualización en tiempo real entre navegadores con Server-Sent Events.",
+        "tech": [
+          "Java 21",
+          "Spring Boot",
+          "Maven",
+          "JavaScript",
+          "SSE"
+        ]
       }
     ]
   },
