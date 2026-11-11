@@ -51,56 +51,45 @@ export const Proyectos = () => {
     <section className="container proyectos-viewport">
       <h2 className="fade-title projects-heading">{t("projects.heading")}</h2>
 
-      {items.map((p, i) => (
-        <article className="project-card float-move" key={p.githubLink || i}>
-          {p.img && (
-            <figure className="project-figure">
-              <img src={p.img} alt={p.title} className="project-img" />
-            </figure>
-          )}
-
-          <div className="project-body">
-            <h3 className="project-title">{p.title}</h3>
-            {p.description && <p className="project-desc">{p.description}</p>}
-
-            {Array.isArray(p.tech) && p.tech.length > 0 && (
-              <ul className="project-tech">
-                {p.tech.map((tag) => (
-                  <li key={tag}>{tag}</li>
-                ))}
-              </ul>
+      <div className="projects-grid">
+        {items.map((p, i) => (
+          <article className="project-card" key={p.githubLink || i}>
+            {p.img && (
+              <figure className="project-figure">
+                <img src={p.img} alt={p.title} className="project-img" loading="lazy" />
+              </figure>
             )}
 
-            <div className="project-actions">
-              {p.githubLink && (
-                <a
-                  className="btn btn-edu btn-sm"
-                  href={p.githubLink}
-                  target="_blank"
-                  rel="noreferrer"
-                  title={labels.github}
-                >
-                  <i className="bi bi-github"></i>
-                  <span>{labels.github}</span>
-                </a>
+            <div className="project-body">
+              <h3 className="project-title">{p.title}</h3>
+              {p.description && <p className="project-desc">{p.description}</p>}
+
+              {Array.isArray(p.tech) && p.tech.length > 0 && (
+                <ul className="project-tech">
+                  {p.tech.map((tag) => (
+                    <li key={tag}>{tag}</li>
+                  ))}
+                </ul>
               )}
 
-              {p.onlineLink && (
-                <a
-                  className="btn btn-edu btn-sm"
-                  href={p.onlineLink}
-                  target="_blank"
-                  rel="noreferrer"
-                  title={labels.online}
-                >
-                  <i className="bi bi-globe2"></i>
-                  <span>{labels.online}</span>
-                </a>
-              )}
+              <div className="project-actions">
+                {p.githubLink && (
+                  <a className="project-btn" href={p.githubLink} target="_blank" rel="noreferrer">
+                    <i className="bi bi-github"></i>
+                    <span>{labels.github}</span>
+                  </a>
+                )}
+                {p.onlineLink && (
+                  <a className="project-btn project-btn--primary" href={p.onlineLink} target="_blank" rel="noreferrer">
+                    <i className="bi bi-box-arrow-up-right"></i>
+                    <span>{labels.online}</span>
+                  </a>
+                )}
+              </div>
             </div>
-          </div>
-        </article>
-      ))}
+          </article>
+        ))}
+      </div>
     </section>
   );
 };
